@@ -102,3 +102,6 @@ document.addEventListener('DOMContentLoaded', function () {
     const resetButton = document.getElementById('reset-btn');
     resetButton.addEventListener('click', resetGame);
 });
+
+
+
