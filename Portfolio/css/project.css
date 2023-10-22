@@ -1,0 +1,391 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root {
+    --bg-color: #1f242d;
+    --second-bg-color: #323946;
+    --text-color: #fff;
+    --main-color: #3cf;
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--bg-color);
+}
+
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 2rem 9%;
+    background: var(--bg-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+
+.header.sticky {
+    border-bottom: .1rem solid  rgba(0, 0, 0, .2);
+}
+
+.logo{
+    font-size: 2.5rem; 
+    color: var(--text-color);
+    font-weight: 600;
+    cursor: default;
+}
+
+.navbar a{
+    font-size: 1.7rem;
+    color: var(--text-color);
+    margin-left: 4rem;
+    transition: .3s;
+}
+
+.navbar a:hover,
+.navbar a.active, .logo
+{
+    background: linear-gradient(45deg, #f06, #3cf);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+#menu-icon{
+    font-size: 3.6rem;
+    color: var(--text-color);
+    display: none;
+}
+
+section {
+    min-height: 100vh;
+    scroll-padding-top: 10rem;
+}
+
+.project-details {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 10rem;
+    background-color: var(--second-bg-color); 
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    margin-top: 10rem;
+    margin-bottom: 10rem;
+    border-radius: 3rem;
+}
+
+.project-image img {
+    max-width: 100%;
+    height: auto;
+}
+
+.project-info {
+    margin-top: 2rem;
+    color: var(--text-color); 
+}
+
+.project-info h2 {
+    font-size: 24px;
+    margin-bottom: 1rem;
+}
+
+ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+ul li {
+    margin-bottom: 0.5rem;
+    font-size: 1.7rem; 
+    color: #ccc;
+    list-style-type: circle;
+}
+
+.buttons {
+    margin-top: 3rem;
+}
+
+.buttons .live-link {
+    margin-bottom: 2rem;
+}
+
+a.live-link, a.code-link {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-right: 20px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: bold;
+    border-radius: 12px;
+    color: #fff;
+    background: linear-gradient(45deg, #f06, #3cf); 
+}
+
+a.live-link:hover, a.code-link:hover {
+    background: linear-gradient(45deg, #3cf, #f06); 
+}
+
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 2rem 9%;
+    background:rgb(7, 85, 91);
+    color: #fff;
+}
+
+.footer-iconTop a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1.8rem;
+    background: var(--main-color);
+    border-radius: .8rem;
+    transition: .5s ease;
+}
+
+.footer-iconTop a:hover{
+    box-shadow:  0 0 1rem var(--main-color);
+}
+
+.footer-iconTop a i {
+    font-size: 2.4rem;
+    color: var(--second-bg-color);
+}
+
+.project-info {
+    margin-top: 2rem;
+    color: var(--text-color); 
+}
+
+.project-info h2 {
+    font-size: 24px;
+    margin-bottom: 3rem;
+    text-decoration: underline 2px white;
+}
+
+.tools-technologies {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.tools-technologies li {
+    background: var(--main-color); 
+    color: var(--second-bg-color); 
+    padding: 8px 16px; 
+    border-radius: 20px;
+    font-size: 1.4rem; 
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 0; 
+}
+
+ul li {
+    margin-bottom: 0.5rem;
+    font-size: 1.6rem; 
+    color: #ccc; 
+}
+
+.project-details .title {
+    font-size: 5rem;
+    color: #3cf;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 3rem;
+}
+
+.title-2 {
+    margin-top: 3rem;
+}
+
+img {
+    border-radius: 20px;
+    margin-bottom: 3rem;
+    opacity: 0;
+    animation: zoomIn 1s ease forwards;
+    animation-delay: 0.5s;
+}
+
+@keyframes zoomIn {
+    0% {
+        opacity: 0;
+        transform: scale(0);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+
+@media (max-width: 1200px) {
+    html{
+        font-size: 55%;
+    }
+
+}
+
+@media (max-width: 991px) {
+    .header{
+        padding: 2rem 3%;
+    }
+
+    section {
+        padding: 10rem 3% 2rem;
+    }
+
+    .footer {
+        padding: 2rem 3%;
+    }
+}
+
+
+@media (max-width: 768px) {
+
+    html{
+        font-size: 30%;
+    }
+
+    .header {
+        width: 100%;
+    }
+
+    .navbar {
+        left: 225;
+    }
+
+    .logo {
+        font-size: 2rem;
+        margin-left: 8rem;
+    }
+
+    .home-content, .home-img {
+        display: block;
+    }
+
+    #menu-icon {
+        display: block;
+    }
+
+   .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        padding: 1rem 3%;
+        background: var(--bg-color);
+        border-top: .1rem solid rgba(0, 0, 0, .2);
+        box-shadow: 0 .5rem 1rem  rgba(0, 0, 0, .2);
+        display: none;
+    }
+
+    .navbar.active {
+        display: block;
+    }
+
+    .navbar a {
+        display: block;
+        font-size: 2rem;
+        margin: 3rem 0;
+        margin-left: 18rem;
+    }
+
+    .project-details {
+        max-width: 250px;
+        margin: 0 auto;
+        padding: 1rem;
+        background-color: var(--second-bg-color);
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+        margin-top: 10rem;
+        margin-bottom: 10rem;
+        border-radius: 3rem;
+        padding-top: 6rem;
+    }
+
+    .project-details .title {
+        font-size: 3rem;
+        margin-bottom: 2rem;
+    }
+
+    .project-info h2 {
+        font-size: 18px;
+    }
+
+    .project-info ul {
+        margin-bottom: 5rem;
+    }
+
+    .buttons {
+        margin-left: 1.8rem;
+        margin-bottom: 2rem;
+    }
+
+    .buttons a {
+        display: inline;
+    }
+
+    a.live-link, a.code-link {
+        font-size: 1.2rem;
+    }
+
+    .footer {
+        width: 100%;
+    }
+
+    .footer-text {
+        margin-left: 8rem;
+    }
+
+    .footer-text p {
+        font-size: 1rem;
+    }
+
+    .footer-iconTop a {
+        padding: 0.8rem;
+    }
+
+}
+
+@media (max-width: 450px) {
+
+    html {
+        font-size: 50%;
+    }
+
+}
+
+@media (max-width: 365px) {
+    
+    .footer {
+        flex-direction: column-reverse;
+    }
+
+    .footer p {
+        text-align: center;
+        margin-top: 2rem;
+    }
+}
