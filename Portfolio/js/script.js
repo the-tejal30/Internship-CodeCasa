@@ -63,23 +63,3 @@ const typed = new Typed('.multiple-text', {
     backSpeed: 100,
     backDelay: 1000,
 })
-
-// contact form submission
-
-// document.querySelector("form").addEventListener("submit", function (event) {
-//     event.preventDefault();
-//     const formData = new FormData(this);
-
-//     fetch("contact.php", {
-//         method: "POST",
-//         body: formData,
-//     })
-//     .then(response => response.text())
-//     .then(data => {
-//         console.log(data);  // Log the server response
-//         // You can add code to handle the response here
-//     })
-//     .catch(error => {
-//         console.error("Form submission error: " + error);
-//     });
-// });

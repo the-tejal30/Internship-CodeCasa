@@ -999,6 +999,7 @@ textarea.contact-input {
 
     #menu-icon {
         display: block;
+        margin-right: 70px;
     }
 
    .navbar {
@@ -1280,6 +1281,10 @@ textarea.contact-input {
 
     .footer-text p {
         font-size: 1rem;
+    }
+
+    .footer-iconTop {
+        margin-right: 70px;
     }
 }
 
