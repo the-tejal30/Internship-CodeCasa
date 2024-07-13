@@ -3,7 +3,7 @@ This is the respository for internship tasks provided by CodeCasa
 
 Live Links:
 
-Task 1 (Portfolio):
+Task 1 (Portfolio): https://portfolio-tejalwani.vercel.app/
 
 Task 2 (To Do App): https://todoapp-tejal.vercel.app/
 
